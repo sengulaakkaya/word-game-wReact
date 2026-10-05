@@ -1,16 +1,27 @@
-# React + Vite
+# 🌸 Flower Word Guessing Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, engaging word-guessing web application built with React, featuring a delightful flower theme where players guess flower-related words or names letter by letter!
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Thematic Gameplay:** Immersive flower-themed word puzzles designed to test vocabulary and provide an enjoyable user experience.
+* **Derived State Management:** Implements clean React logic by deriving game conditions (such as win/loss status and wrong guess tracking) directly from the `usedLetters` state array to prevent asynchronous state bugs.
+* **Interactive Virtual Keyboard:** Fully responsive onscreen keyboard that dynamically updates key styling based on user selections.
+* **Modern Tooling & Build Pipeline:** Powered by Vite for lightning-fast hot module replacement (HMR) and optimized production builds.
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React** - Frontend JavaScript library for component-driven UI
+* **JavaScript (ES6+)** - Core logic, array/string manipulation, and game algorithms
+* **Vite** - Modern frontend bundler and build tool
+* **HTML5 & CSS3** - Custom styling and responsive layout design
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/         # Reusable UI components (Keyboard, etc.)
+├── data/               # Flower datasets and game words
+├── App.jsx             # Main game logic, state management, and win/loss conditions
+├── index.css           # Global styles and theme configurations
+└── main.jsx            # Application entry point
