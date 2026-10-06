@@ -11,7 +11,7 @@ export default function Keyboard(props){
                 className="keyboard-btn" 
                 style={
                     {
-                        backgroundColor:color
+                        backgroundColor:color || undefined
                     }
                 }
                 onClick={()=>props.onClick(letter)}

@@ -9,7 +9,7 @@ import { getWord } from "./data/words.js"
 import "./index.css"
 export default function App(){
 
-  const [currentWord,setCurrentWord] = useState(getWord())
+  const [currentWord,setCurrentWord] = useState(getWord())//ilerde geliştireceksen burda fetch ile apiden kelime alma ekle ve kelimeleri bilmek zor ipucu veren bi component kısmı oluşturulabilir.
   const [usedLetters,setUsedLaters] = useState([])
 
   const wrongCount = 
